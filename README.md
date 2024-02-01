@@ -7,7 +7,8 @@ Projeto em Next JS de uma plataforma simples de e-commerce, conectada a uma API 
 ## Ferramentas utilizadas
 
 1. Next JS;
-2. TypeScript.
+2. TypeScript;
+3. Tailwind CSS.
 
 ## Como testar?
 
