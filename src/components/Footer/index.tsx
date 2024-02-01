@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full text-center py-10 text-sm">
+    <footer className="w-full text-center py-10">
       <span>
         Feito por{" "}
         <Link

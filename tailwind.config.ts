@@ -10,7 +10,7 @@ const config: Config = {
     container: {
       center: true,
       screens: {
-        xl: "1000px",
+        xl: "1200px",
       },
     },
     extend: {
