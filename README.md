@@ -16,7 +16,7 @@ Há duas formas, sendo a execução local e a execução on-line via Vercel.
 
 **A) Aplicação no Vercel:**
 Obs: Já conta com a execução do projeto full-stack.
-Apenas acesse a seguinte URL: **A ser adicionado futuramente...**
+Apenas acesse a seguinte URL: https://projeto-ecommerce-delta.vercel.app
 
 **B) Execução local:**
 
