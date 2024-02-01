@@ -8,6 +8,12 @@
   padding: 0;
 }
 
+html,
+body {
+  height: 100%;
+  background-color: #d9d9d9;
+}
+
 ::selection,
 ::-moz-selection {
   background-color: #000;
