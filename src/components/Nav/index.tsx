@@ -13,7 +13,7 @@ const Nav = () => {
       <div className="flex">
         <Link
           href="/"
-          className="flex items-center gap-2 w-max font-bold text-white"
+          className="flex items-center gap-2 w-max font-bold text-white hover:text-[#70FFA9]"
         >
           <Image className="invert size-6" src={logo_image} alt="Logo" />
           E-COMMERCE
