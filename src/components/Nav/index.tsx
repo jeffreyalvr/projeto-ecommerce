@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import logo_image from "/public/icons/logo.png";
 
@@ -10,10 +11,13 @@ const Nav = () => {
   return (
     <nav className="flex flex-col items-center justify-between gap-4 h-max w-full py-4 px-16 bg-black text-white md:h-[70px] md:flex-row">
       <div className="flex">
-        <span className="flex items-center gap-2 w-max font-bold text-white">
+        <Link
+          href="/"
+          className="flex items-center gap-2 w-max font-bold text-white"
+        >
           <Image className="invert size-6" src={logo_image} alt="Logo" />
           E-COMMERCE
-        </span>
+        </Link>
       </div>
       <div className="flex w-max gap-6 items-center">
         <ButtonPainelAdmin />
