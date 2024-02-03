@@ -1,6 +1,6 @@
 import Nav from "@/components/Nav";
 import Box from "@/components/Box";
-import Button from "@/components/Button";
+import { ButtonLink } from "@/components/Button";
 import Footer from "@/components/Footer";
 
 const FecharCompra = () => {
@@ -19,7 +19,7 @@ const FecharCompra = () => {
               lá também poderá acompanhar o status do envio.
             </h3>
             <br />
-            <Button
+            <ButtonLink
               href="/"
               variant="primary"
               text="Voltar a homepage"
