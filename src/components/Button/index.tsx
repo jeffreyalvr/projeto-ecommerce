@@ -26,7 +26,7 @@ const Button = ({ variant, text, title, applyMargin }: ButtonProps) => {
           : "bg-[#DCDCDC] text-black"
       } ${
         applyMargin && "my-4"
-      } inline-flex items-center h-[35px] w-auto px-4 py-2 rounded-lg text-center text-sm border border-[transparent] hover:opacity-85 hover:border-black`}
+      } inline-flex items-center h-[35px] w-auto px-4 py-2 rounded-lg text-center text-sm border border-[transparent] hover:opacity-85 hover:border-[#C8C8C8]`}
       title={title}
     >
       {text}
@@ -48,7 +48,7 @@ const ButtonLink = ({
         variant === "primary"
           ? "bg-black text-white"
           : "bg-[#DCDCDC] text-black"
-      } inline-flex items-center h-[35px] w-auto my-4 px-4 py-2 rounded-lg text-center text-sm border border-[transparent] hover:opacity-85 hover:border-black`}
+      } inline-flex items-center h-[35px] w-auto my-4 px-4 py-2 rounded-lg text-center text-sm border border-[transparent] hover:opacity-85 hover:border-[#C8C8C8]`}
       title={title}
     >
       {text}
@@ -72,7 +72,7 @@ const ButtonImage = ({
           : "bg-[#DCDCDC] text-black"
       } ${
         applyMargin && "my-4"
-      } inline-flex items-center h-[35px] w-auto px-4 py-2 rounded-lg text-center text-sm border border-[transparent] hover:opacity-85 hover:border-black`}
+      } inline-flex items-center h-[35px] w-auto px-4 py-2 rounded-lg text-center text-sm border border-[transparent] hover:opacity-85 hover:border-[#C8C8C8]`}
       title={title}
     >
       <Image src={image} alt={altText} className="size-[20px]" />
