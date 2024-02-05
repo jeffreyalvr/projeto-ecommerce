@@ -21,6 +21,7 @@ const ItemsList = async () => {
       "https://projeto-ecommerce-api.onrender.com/produtos",
       { next: { revalidate: 3600 } }
     );
+
     if (!response.ok) throw new Error("Erro ao requisitar os dados...");
     return response.json();
   };
