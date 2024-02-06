@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import { numberParaFloat } from "@/util/number";
+
 import no_image_image from "/public/icons/no-image.png";
 import like_outlined_image from "/public/icons/like-outlined.png";
 import like_filled_image from "/public/icons/like-filled.png";
@@ -45,7 +47,9 @@ const ItemsList = async () => {
             <Link href={`/produtos/${item.id}`}>
               <p className="font-bold">{item.nome}</p>
             </Link>
-            <span className="text-[#6B6B6B]">R$ {item.valor}</span>
+            <span className="text-[#6B6B6B]">
+              R$ {numberParaFloat(item.valor)}
+            </span>
             <div className="flex gap-1 w-max mt-2">
               <Image
                 src={like_outlined_image}

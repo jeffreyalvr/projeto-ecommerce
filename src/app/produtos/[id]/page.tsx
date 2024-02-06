@@ -3,6 +3,7 @@ import Box from "@/components/Box";
 import Footer from "@/components/Footer";
 
 import { Button } from "@/components/Button";
+import { numberParaFloat } from "@/util/number";
 
 import Image from "next/image";
 import no_image_image from "/public/icons/no-image.png";
@@ -44,7 +45,9 @@ const Produto = async ({ params }: { params: { slug: string } }) => {
                 <div className="flex flex-col gap-4">
                   <div className="flex flex-col gap-2">
                     <p className="font-bold">Valor</p>
-                    <span className="text-[#6B6B6B]">R$ {item.valor}</span>
+                    <span className="text-[#6B6B6B]">
+                      R$ {numberParaFloat(item.valor)}
+                    </span>
                   </div>
                   <div className="flex flex-col gap-2">
                     <p className="font-bold">Estoque</p>

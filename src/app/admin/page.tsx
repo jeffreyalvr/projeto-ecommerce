@@ -3,6 +3,7 @@ import Box from "@/components/Box";
 import Footer from "@/components/Footer";
 
 import { Button, ButtonImage } from "@/components/Button";
+import { numberParaFloat } from "@/util/number";
 
 import Image from "next/image";
 
@@ -90,7 +91,9 @@ const Page = async () => {
                     <div className="flex flex-col gap-4">
                       <div className="flex flex-col gap-2">
                         <p className="font-bold">Valor</p>
-                        <span className="text-[#6B6B6B]">R$ {item.valor}</span>
+                        <span className="text-[#6B6B6B]">
+                          R$ {numberParaFloat(item.valor)}
+                        </span>
                       </div>
                       <div className="flex flex-col gap-2">
                         <p className="font-bold">Estoque</p>
