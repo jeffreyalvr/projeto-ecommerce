@@ -6,6 +6,7 @@ import { Button, ButtonImage } from "@/components/Button";
 import { numberParaFloat } from "@/util/number";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import no_image_image from "/public/icons/no-image.png";
 import arrow_image from "/public/icons/arrow.png";
@@ -57,20 +58,24 @@ const Page = async () => {
                       />
                     </h2>
                     <div className="inline-flex gap-2">
-                      <ButtonImage
-                        variant="secondary"
-                        text="V"
-                        title="Ver produto"
-                        image={view_image}
-                        altText="Ver"
-                      />
-                      <ButtonImage
-                        variant="secondary"
-                        text="E"
-                        title="Editar produto"
-                        image={edit_image}
-                        altText="Editar"
-                      />
+                      <Link href={`/produtos/${item.id}`}>
+                        <ButtonImage
+                          variant="secondary"
+                          text="V"
+                          title="Ver produto"
+                          image={view_image}
+                          altText="Ver"
+                        />
+                      </Link>
+                      <Link href={`/admin/editar/${item.id}`}>
+                        <ButtonImage
+                          variant="secondary"
+                          text="E"
+                          title="Editar produto"
+                          image={edit_image}
+                          altText="Editar"
+                        />
+                      </Link>
                       <ButtonImage
                         variant="secondary"
                         text="X"
